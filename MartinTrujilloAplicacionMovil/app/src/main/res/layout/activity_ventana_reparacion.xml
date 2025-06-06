@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_gradient"
+    tools:context=".controller.VentanaReparacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="REPARACIONES" />
+
+        <!-- Contenedor para los ImageButtons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Fila 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/btnReparacion1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion1"
+                    android:onClick="onReparacionClick"/>
+
+                <ImageButton
+                    android:id="@+id/btnReparacion2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion2"
+                    android:onClick="onReparacionClick"/>
+            </LinearLayout>
+
+            <!-- Fila 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/btnReparacion3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion3"
+                    android:onClick="onReparacionClick"/>
+
+                <ImageButton
+                    android:id="@+id/btnReparacion4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion4"
+                    android:onClick="onReparacionClick"/>
+            </LinearLayout>
+
+            <!-- Fila 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/btnReparacion5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion5"
+                    android:onClick="onReparacionClick"/>
+
+                <ImageButton
+                    android:id="@+id/btnReparacion6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion6"
+                    android:onClick="onReparacionClick"/>
+            </LinearLayout>
+
+            <!-- Fila 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/btnReparacion7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion7"
+                    android:onClick="onReparacionClick"/>
+
+                <ImageButton
+                    android:id="@+id/btnReparacion8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion8"
+                    android:onClick="onReparacionClick"/>
+            </LinearLayout>
+
+            <!-- Fila 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/btnReparacion9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion9"
+                    android:onClick="onReparacionClick"/>
+
+                <ImageButton
+                    android:id="@+id/btnReparacion10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@android:drawable/ic_dialog_info"
+                    android:contentDescription="@string/reparacion10"
+                    android:onClick="onReparacionClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

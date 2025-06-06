@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 🔐 Permiso para usar Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MartinTrujillo"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.VentanaAsignarPiezas"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaListaPiezasUsadas"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaListaPiezas"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaVerDatosCoche"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaGestionReparacion"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaCrearCoche"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaCrearCliente"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaNombreApellido"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaHoras"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaReparacion"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaGargaje"
+            android:exported="false" />
+        <activity
+            android:name=".controller.VentanaPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

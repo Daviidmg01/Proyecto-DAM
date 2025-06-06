@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".controller.VentanaGestionReparacion">
+
+    <!-- Encabezado con la matrícula -->
+    <TextView
+        android:id="@+id/textViewMatricula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:letterSpacing="0.03"
+        android:shadowColor="#40000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtítulo motivo -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/motivo_de_la_reparaicion"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMatricula" />
+
+    <!-- CardView del motivo -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#80FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCocheAsignado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <TextView
+            android:id="@+id/textViewMotivo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Texto coche asignado -->
+    <TextView
+        android:id="@+id/textViewCocheAsignado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Coche asignado:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <!-- GridLayout de botones principales -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="8dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/btnPiezasAsignadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCocheAsignado">
+
+        <!-- Botón Asignar Mecánico -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAsignarMecanico"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@drawable/button_state_blue"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnAsignarMecanico"
+                style="@style/TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/asignar_mecanico"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón Asignar Piezas -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAsignarPieza"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@drawable/button_state_blue"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnAsignarPieza"
+                style="@style/TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/asignar_piezas"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón Asignar Horas -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAsignarHoras"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@drawable/button_state_blue"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnAsignarHoras"
+                style="@style/TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/asignar_horas"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón Finalizar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFinalizar"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@drawable/button_state_red"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                style="@style/TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/finalizar"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <!-- Botón extra que ocupa el ancho de 2 columnas -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnPiezasAsignadas"
+        android:layout_width="345dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@drawable/button_state_green"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnExtraPiezasAsignadas"
+            style="@style/TextButton"
+            android:layout_width="348dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="Mostrar piezas asignadas"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

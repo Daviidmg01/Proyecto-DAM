@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#3498db"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeColor="#2980b9"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Matrícula del vehículo -->
+        <TextView
+            android:id="@+id/textMatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matrícula: 1234ABC"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:letterSpacing="0.02"/>
+
+        <!-- Divider sutil -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#FFFFFF30"/>
+
+        <!-- Nombre de la pieza -->
+        <TextView
+            android:id="@+id/textNombrePieza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pieza: Nombre"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <!-- Información de uso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCantidadUsada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad: unidades"
+                android:textColor="#EEEEEE"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textColor="#EEEEEE"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textPrecioUnidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15.0€/ud"
+                android:textColor="#EEEEEE"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Precio total destacado -->
+        <TextView
+            android:id="@+id/textPrecioTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total: precio€"
+            android:textColor="#f1c40f"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+        <!-- Mecánico asignado destacado -->
+        <TextView
+            android:id="@+id/textMecanico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Asignado por: mecanico"
+            android:textColor="#CC2E2E"
+        android:textSize="14sp"
+        android:textStyle="italic"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

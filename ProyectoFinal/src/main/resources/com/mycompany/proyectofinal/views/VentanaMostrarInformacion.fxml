@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="655.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.controller.ventanainfoaplicacion.VentanaMostrarInformacionController">
+    <stylesheets>
+        <URL value="@/styles/ventanamostrarinformacion.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="tituloEncabezado" layoutY="6.0" prefHeight="80.0" prefWidth="655.0">
+         <children>
+            <Label fx:id="nombreEncabezado" alignment="CENTER" layoutX="117.0" layoutY="10.0" prefHeight="60.0" prefWidth="157.0" text="TALLERES MARTÍN TRUJILLO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="147.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_taller_blanco.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txt_titulo" alignment="CENTER" layoutX="274.0" layoutY="10.0" prefHeight="60.0" prefWidth="368.0" text="INF. APLICACIÓN" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fx:id="lblSirve" layoutX="38.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Para que sirve?">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblUsa" layoutX="38.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Como se usa?">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="txt_objetivo" alignment="TOP_LEFT" layoutX="38.0" layoutY="130.0" prefHeight="51.0" prefWidth="599.0" text="Label" wrapText="true" />
+      <Label fx:id="txt_funcion" alignment="TOP_LEFT" layoutX="38.0" layoutY="219.0" prefHeight="245.0" prefWidth="599.0" text="Label" wrapText="true" />
+   </children>
+</AnchorPane>

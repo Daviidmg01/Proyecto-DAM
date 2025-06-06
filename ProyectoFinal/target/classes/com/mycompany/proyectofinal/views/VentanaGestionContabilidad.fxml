@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="910.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.controller.ventanacontabilidad.VentanaGestionContabilidadController">
+    <stylesheets>
+        <URL value="@/styles/ventanagestioncontabilidad.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableContabilidad" layoutX="34.0" layoutY="224.0" prefHeight="331.0" prefWidth="843.0">
+        <columns>
+          <TableColumn fx:id="columnTipo" prefWidth="75.0" text="Tipo" />
+          <TableColumn fx:id="columnCantidad" prefWidth="120.0" text="Cantidad" />
+            <TableColumn fx:id="columnFecha" prefWidth="168.0" text="Fecha" />
+            <TableColumn fx:id="columnConcepto" prefWidth="306.0" text="Concepto" />
+            <TableColumn fx:id="columnNombreUsuario" prefWidth="173.0" text="Nombre usuario" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="-2.0" prefHeight="92.0" prefWidth="910.0">
+         <children>
+            <Label fx:id="nombreEncabezado" alignment="CENTER" layoutX="117.0" layoutY="10.0" prefHeight="60.0" prefWidth="157.0" text="TALLERES MARTÍN TRUJILLO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="147.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_taller_blanco.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tituloEncabezado" alignment="CENTER" layoutX="301.0" layoutY="10.0" prefHeight="60.0" prefWidth="322.0" text="CONTABILIDAD" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUsuario" layoutX="694.0" mnemonicParsing="false" onAction="#ventanaGestionPersonal" prefHeight="92.0" prefWidth="174.0" text="Nombre correo" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lbl_fecha" layoutX="34.0" layoutY="176.0" text="Fecha">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_nombre" layoutX="356.0" layoutY="118.0" text="Nombre de usuario" />
+      <Button fx:id="btn_buscar" layoutX="356.0" layoutY="171.0" mnemonicParsing="false" onAction="#buscarDatosContabilidad" prefHeight="31.0" prefWidth="303.0" text="Buscar" />
+      <ComboBox fx:id="comboBoxTipo" layoutX="103.0" layoutY="113.0" prefWidth="150.0" />
+      <DatePicker fx:id="dtPickerFecha" layoutX="103.0" layoutY="174.0" />
+      <TextField fx:id="txtFieldNombre" layoutX="508.0" layoutY="114.0" />
+      <Label fx:id="lbl_dineroActual" layoutX="735.0" layoutY="108.0" prefHeight="54.0" prefWidth="111.0" text="Dinero actual en la empresa" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDineroActual" alignment="CENTER" layoutX="704.0" layoutY="173.0" prefHeight="17.0" prefWidth="174.0" text="0,00€" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_tipo" layoutX="34.0" layoutY="117.0" text="Tipo" />
+   </children>
+</AnchorPane>

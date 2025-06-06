@@ -1,0 +1,155 @@
+/* ventanabuscadorreparaciones.css - Versión actualizada */
+
+/* ===== ESTILOS BASE ===== */
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* ===== CABECERA PRINCIPAL ===== */
+AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* Título principal en cabecera */
+#txtTitle {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0.5, 1, 1);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+/* Logo en cabecera */
+#logoCabecera {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+/* Texto del taller en cabecera */
+Label[text="TALLERES MARTÍN TRUJILLO"] {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+TextField:focused, DatePicker:focused, ComboBox:focused {
+    -fx-border-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(41,128,185,0.3), 5, 0, 0, 1);
+}
+
+/* Campos de formulario */
+TextField, DatePicker, ComboBox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 4;
+    -fx-border-width: 1.5;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+/* ===== PRECIO TOTAL (ESTILO DESTACADO) ===== */
+#txtPrecioTotalCompra {
+    -fx-text-fill: #27ae60; /* Verde intenso */
+    -fx-font-size: 24px;    /* Tamaño aumentado */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0.5, 1, 1);
+    -fx-background-color: #f8fff8; /* Fondo verde muy claro */
+    -fx-background-radius: 5;
+    -fx-border-color: #2ecc71;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+#txtDineroActual {
+    -fx-text-fill: #ff0000; /* Rojo */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-font-size: 18px; /* Mantiene el tamaño original */
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 1, 0, 1, 1); /* Sombra para mejor legibilidad */
+}
+
+#txtInformacion {
+    -fx-text-fill: #ff0000; /* Rojo */
+    -fx-font-size: 18px; /* Mantiene el tamaño original */
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 1, 0, 1, 1); /* Sombra para mejor legibilidad */
+}
+
+/* ===== BOTONES ESPECÍFICOS ===== */
+/* Botón Comprar (AZUL) */
+#btnRealizarCompra {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+#btnRealizarCompra:hover {
+    -fx-background-color: linear-gradient(to bottom, #4aa8e8, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 7, 0, 0, 2);
+}
+
+#btnRealizarCompra:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #1a5276);
+}
+
+/* Botón Buscar (VERDE) */
+#buscarPiezas {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+#buscarPiezas:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 7, 0, 0, 2);
+}
+
+#buscarPiezas:pressed {
+    -fx-background-color: linear-gradient(to bottom, #27ae60, #1e8449);
+}
+
+/* ===== [Mantener el resto de estilos existentes] ===== */
+/* ... (otros estilos se mantienen igual) ... */
+
+/* Botón de usuario (en cabecera) */
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8px 20px;
+    -fx-effect: none;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+
+/* Efectos para todos los botones */
+Button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+Button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}

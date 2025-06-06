@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="1055.0" styleClass="mainFxmlClass" stylesheets="@../../../../styles/ventanacomprarpiezas.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.controller.ventanapiezas.VentanComprarPiezasController">
+    <children>
+      <Label layoutX="691.0" layoutY="119.0" text="Proveedor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+        <TableView fx:id="tablaPiezas" editable="true" layoutX="39.0" layoutY="182.0" prefHeight="433.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="columnaSeleccion" editable="true" text="Seleccionar" />
+                <TableColumn fx:id="columnaNombre" prefWidth="163.0" text="Nombre" />
+                <TableColumn fx:id="columnaStock" prefWidth="124.0" text="Stock Actual" />
+                <TableColumn fx:id="columnaMinimo" prefWidth="94.0" text="Stock Mínimo" />
+                <TableColumn fx:id="columnaCantidad" prefWidth="188.0" text="Cantidad a Comprar" />
+            <TableColumn fx:id="columnaPrecio" text="Precio" />
+            </columns>
+        </TableView>
+      <AnchorPane prefHeight="80.0" prefWidth="1055.0">
+         <children>
+            <Label fx:id="nombreEncabezado" alignment="CENTER" layoutX="171.0" layoutY="10.0" prefHeight="60.0" prefWidth="157.0" text="TALLERES MARTÍN TRUJILLO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="147.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_taller_blanco.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tituloEncabezado" alignment="CENTER" layoutX="372.0" layoutY="10.0" prefHeight="60.0" prefWidth="312.0" text="COMPRAR PIEZAS" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUsuario" layoutX="827.0" mnemonicParsing="false" onAction="#ventanaGestionPersonal" prefHeight="80.0" prefWidth="174.0" text="Nombre correo" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="45.0" layoutY="118.0" text="Nombre de la pieza">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBoxStock" layoutX="440.0" layoutY="118.0" mnemonicParsing="false" text="Stock inferior al minimo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <ComboBox fx:id="comboBoxProveedor" layoutX="763.0" layoutY="106.0" prefHeight="44.0" prefWidth="258.0" />
+      <TextField fx:id="txtFieldNombrePieza" layoutX="177.0" layoutY="112.0" prefHeight="34.0" prefWidth="228.0" />
+      <Label layoutX="852.0" layoutY="423.0" text="Precio de la compra">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPrecioTotalCompra" alignment="CENTER" layoutX="839.0" layoutY="462.0" prefHeight="48.0" prefWidth="149.0" text="Label" textAlignment="CENTER" />
+      <Button fx:id="btnRealizarCompra" layoutX="826.0" layoutY="567.0" mnemonicParsing="false" onAction="#realizarCompra" prefHeight="48.0" prefWidth="174.0" text="Comprar" />
+      <Button fx:id="buscarPiezas" layoutX="826.0" layoutY="182.0" mnemonicParsing="false" onAction="#buscarPiezas" prefHeight="48.0" prefWidth="174.0" text="Buscar" />
+      <Label layoutX="852.0" layoutY="288.0" text="Dinero total del taller">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDineroActual" alignment="CENTER" layoutX="839.0" layoutY="327.0" prefHeight="48.0" prefWidth="149.0" text="Label" textAlignment="CENTER" />
+      <Label fx:id="txtInformacion" alignment="CENTER" layoutX="39.0" layoutY="615.0" prefHeight="39.0" prefWidth="505.0" text="Seleccione un producto para guardarlo y proceder a la compra" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

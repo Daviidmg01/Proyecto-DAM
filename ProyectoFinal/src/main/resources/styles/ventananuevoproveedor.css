@@ -1,0 +1,96 @@
+/* Estilos base */
+.mainFxmlClass {
+    -fx-background-color: #e9f5ff;
+    -fx-font-family: 'Arial';
+}
+
+/* Encabezado */
+/* AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+*/
+/* Título principal */
+#txtTitle {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0.5, 1, 1);
+}
+
+/* Logo */
+ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0.3, 0, 2);
+}
+
+/* Texto del taller - Aumentado a 48px */
+#nombreEmpresa {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 48px; /* Cambiado de 36px a 48px */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.7), 0, 0, 0, 1);
+}
+
+/* Etiquetas del formulario */
+Label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.9), 0, 0, 0, 1);
+}
+
+/* Campos de texto */
+TextField {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 4;
+    -fx-border-width: 1.5;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+TextField:focused {
+    -fx-border-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(41,128,185,0.3), 5, 0, 0, 1);
+}
+
+/* Botón Añadir */
+#btnNuevo {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-pref-width: 120px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+#btnNuevo:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 7, 0, 0, 2);
+}
+
+#btnNuevo:pressed {
+    -fx-background-color: linear-gradient(to bottom, #27ae60, #1e8449);
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+/* Botón de usuario */
+#btnUsuario {
+    -fx-background-color: #2ecc71;
+    -fx-font-size: 12px;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* Placeholder text */
+TextField .prompt-text {
+    -fx-fill: #95a5a6;
+    -fx-font-style: italic;
+}

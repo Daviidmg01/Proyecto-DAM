@@ -1,0 +1,99 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+#lbl_tipo, #lbl_fecha, #lbl_nombre, #lbl_dineroActual {
+    -fx-text-fill: white; /* Color blanco */
+    -fx-font-weight: bold; /* Negrita */
+}
+
+/* Tamaño específico para lbl_dineroActual (14px original + 3px) */
+#lbl_dineroActual {
+    -fx-font-size: 17px;
+}
+
+#txtDineroActual {
+    -fx-text-fill: #ff0000; /* Rojo */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-font-size: 18px; /* Mantiene el tamaño original */
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 1, 0, 1, 1); /* Sombra para mejor legibilidad */
+}
+
+#btn_buscar {
+    -fx-background-color: #3498db;  /* Azul principal */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+/* Efectos interactivos */
+#btn_buscar:hover {
+    -fx-background-color: #2980b9;  /* Azul más oscuro al pasar el ratón */
+    -fx-cursor: hand;
+}
+
+#btn_buscar:pressed {
+    -fx-background-color: #1a5276;  /* Azul más intenso al presionar */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 0);
+}
+
+TableView {
+    -fx-background-color: white;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8 10;
+    -fx-border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d4e6ff;
+}
+
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8px 20px;
+    -fx-effect: none;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}

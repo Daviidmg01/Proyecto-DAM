@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+#txt_titulo, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+#txt_objetivo, #txt_funcion {
+    -fx-text-fill: #f0f0f0; /* Blanco ligeramente apagado */
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial';
+    -fx-font-weight: normal;
+    -fx-padding: 5px;
+}
+
+#lblSirve, #lblUsa {
+    -fx-fill: white; /* Color blanco */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-font-size: 23px; /* 18px original + 5px = 23px */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 1, 1); /* Sombra para mejor legibilidad */
+}

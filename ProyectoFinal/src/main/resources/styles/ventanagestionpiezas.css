@@ -1,0 +1,135 @@
+/* ventanagestionpiezas.css - Estilo consistente con botones verde y amarillo */
+
+/* Main background */
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* AnchorPane principal (azul oscuro) */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* Tabla de piezas */
+TableView {
+    -fx-background-color: white;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8 10;
+    -fx-border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d4e6ff;
+}
+
+/* Botones generales */
+Button {
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 4, 0, 0, 1);
+    -fx-padding: 8 15;
+    -fx-min-width: 120px;
+    -fx-transition: all 0.2s;
+}
+
+Button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6, 0, 0, 2);
+}
+
+Button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Botón Nueva Pieza - Verde */
+#btnNueva {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-font-size: 14px;
+}
+
+#btnNueva:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+}
+
+/* Botón Modificar - Amarillo */
+#btnModificar {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e67e22);
+    -fx-font-size: 14px;
+}
+
+#btnModificar:hover {
+    -fx-background-color: linear-gradient(to bottom, #f4b350, #f39c12);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8px 20px;
+    -fx-effect: none;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+#btnNuevaPieza {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-font-size: 14px;
+}
+
+#btnNuevaPieza:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+}
+
+/* Botón Modificar Pieza - Amarillo */
+#btnModificarPieza {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e67e22);
+    -fx-font-size: 14px;
+}
+
+#btnModificarPieza:hover {
+    -fx-background-color: linear-gradient(to bottom, #f4b350, #f39c12);
+}
+
+/* Botón Comprar Piezas - Azul */
+#btnComprarPiezas {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-font-size: 14px;
+}
+
+#btnComprarPiezas:hover {
+    -fx-background-color: linear-gradient(to bottom, #4aa8e8, #3498db);
+}

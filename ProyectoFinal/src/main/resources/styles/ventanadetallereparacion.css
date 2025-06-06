@@ -1,0 +1,116 @@
+/* ventanadetallereparacion.css */
+
+/* Estilo base */
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* AnchorPane principal (azul) */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+/* AnchorPane del header (blanco) */
+AnchorPane > AnchorPane:first-child {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 2px 0;
+}
+
+/* Textos en el AnchorPane azul (negros) */
+AnchorPane Text {
+    -fx-fill: black;
+    -fx-font-weight: bold;
+}
+
+/* Texto del motivo sin negrita (nuevo cambio) */
+#txt_motivo {
+    -fx-font-weight: normal;
+}
+
+/* Textos en el AnchorPane blanco (negros) */
+AnchorPane > AnchorPane:first-child Label,
+AnchorPane > AnchorPane:first-child Text {
+    -fx-text-fill: black;
+}
+
+/* Estilo específico para el título principal */
+#txt_title {
+    -fx-fill: black;
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.7), 0, 0, 0, 1);
+}
+
+/* Estado de reparación en verde (nuevo cambio) */
+#txt_estado {
+    -fx-font-weight: bold;
+    -fx-fill: #2ecc71; /* Verde más brillante */
+}
+
+/* Costes - destacados */
+#txt_costManObra, #txt_costPiezas {
+    -fx-font-weight: bold;
+    -fx-fill: #2ecc71; /* Verde más brillante */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 1, 0, 1, 1);
+    -fx-font-size: 18px;
+}
+
+#txt_costeTotal {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #e74c3c; /* Rojo más intenso */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 1, 0, 1, 1);
+}
+
+/* Logo y efectos */
+ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+/* Botón de usuario */
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8px 20px;
+    -fx-effect: none;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+
+/* Títulos en el header */
+Label[text="REPARACIÓN"] {
+    -fx-font-size: 24px;
+    -fx-text-fill: black;
+}
+Label[text="TALLERES MARTÍN TRUJILLO"] {
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+/* Todos los Text (labels) en blanco por defecto */
+Text {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+#txt_title {
+    -fx-fill: white;  /* Color blanco */
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 3, 0, 1, 1); /* Sombra para mejor legibilidad */
+}

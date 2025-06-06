@@ -1,0 +1,159 @@
+/* ventanabuscadorreparaciones.css - Versión unificada */
+
+/* ===== ESTILOS BASE ===== */
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* ===== CABECERA PRINCIPAL (ESTILO REUTILIZABLE) ===== */
+AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* Título principal en cabecera */
+#txtTitle {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0.5, 1, 1);
+}
+
+/* Logo en cabecera */
+#logoCabecera {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+/* Texto del taller en cabecera */
+Label[text="TALLERES MARTÍN TRUJILLO"] {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
+
+/* ===== PANEL DE CONTENIDO (BLANCO) ===== */
+.contenedor-principal {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 2px 0;
+    -fx-padding: 15px;
+}
+
+/* ===== ELEMENTOS DEL FORMULARIO ===== */
+/* Títulos y etiquetas */
+Label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+/* Campos de formulario */
+TextField, DatePicker, ComboBox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 4;
+    -fx-border-width: 1.5;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+TextField:focused, DatePicker:focused, ComboBox:focused {
+    -fx-border-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(41,128,185,0.3), 5, 0, 0, 1);
+}
+
+/* ===== TABLA DE RESULTADOS ===== */
+TableView {
+    -fx-background-color: white;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8 10;
+    -fx-border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d4e6ff;
+}
+
+/* ===== BOTONES ===== */
+/* Estilo base para todos los botones */
+Button {
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 4, 0, 0, 1);
+}
+
+/* Botón de búsqueda */
+#buscarReparacion {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+}
+
+#buscarReparacion:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+}
+
+/* Botón de información */
+#btnInfo {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+}
+
+#btnInfo:hover {
+    -fx-background-color: linear-gradient(to bottom, #4aa8e8, #3498db);
+}
+
+/* Botón de usuario (en cabecera) */
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8px 20px;
+    -fx-effect: none;
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+
+/* Efectos hover/pressed para botones */
+Button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6, 0, 0, 2);
+}
+
+Button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}

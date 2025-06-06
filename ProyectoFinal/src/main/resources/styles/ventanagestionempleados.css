@@ -1,0 +1,144 @@
+/* ventanagestionempleados.css - Estilo consistente con botones verde, amarillo y rojo */
+
+/* Main background */
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* AnchorPane principal (azul oscuro) */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* AnchorPane del header (blanco) */
+AnchorPane > AnchorPane:first-child {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 0 0 2px 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+/* Textos generales */
+Label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+/* Título principal */
+Label[text="EMPLEADOS"] {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2c3e50;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.7), 0, 0, 0, 1);
+}
+
+/* Logo */
+ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+/* Botón de usuario */
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0; /* Elimina el redondeo de bordes */
+    -fx-border-width: 0; /* Elimina el borde */
+    -fx-padding: 5px 10px; /* Ajuste de padding */
+    -fx-effect: none; /* Elimina la sombra para mejor integración */
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+    -fx-cursor: hand; /* Cambia el cursor al pasar por encima */
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+
+/* Tabla de empleados */
+TableView {
+    -fx-background-color: white;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8 10;
+    -fx-border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d4e6ff;
+}
+
+/* Botones de acción */
+Button {
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 4, 0, 0, 1);
+    -fx-transition: all 0.2s;
+}
+
+Button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6, 0, 0, 2);
+}
+
+Button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Botón Alta - VERDE */
+#btnAlta {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-font-size: 14px;
+}
+
+#btnAlta:hover {
+    -fx-background-color: linear-gradient(to bottom, #3fe382, #2ecc71);
+}
+
+/* Botón Modificar - AMARILLO */
+#btnModificar {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e67e22);
+    -fx-font-size: 14px;
+}
+
+#btnModificar:hover {
+    -fx-background-color: linear-gradient(to bottom, #f4b350, #f39c12);
+}
+
+/* Botón Baja - ROJO */
+#btnBaja {
+    -fx-background-color: linear-gradient(to bottom, #e74c3c, #c0392b);
+    -fx-font-size: 14px;
+}
+
+#btnBaja:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff5c4c, #e74c3c);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}

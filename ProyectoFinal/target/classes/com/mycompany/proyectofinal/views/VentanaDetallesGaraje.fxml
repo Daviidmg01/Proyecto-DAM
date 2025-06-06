@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="809.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.controller.ventanaprincipal.VentanaDetallesGarajeController">
+    <stylesheets>
+        <URL value="@/styles/ventanadetallesgaraje.css" />
+    </stylesheets>
+   <children>
+      <Line endX="-41.0" endY="173.0" layoutX="442.0" layoutY="323.0" startX="-41.0" startY="-127.0" />
+      <Label alignment="CENTER" layoutX="148.0" layoutY="149.0" text="Datos del coche">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="59.0" layoutY="424.0" text="Propietario">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="59.0" layoutY="469.0" text="Fecha entrada">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelPropietario" layoutX="195.0" layoutY="416.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelFechaEntrada" layoutX="197.0" layoutY="459.0" prefHeight="20.0" prefWidth="171.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="582.0" layoutY="159.0" text="Reparación">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="595.0" layoutY="213.0" text="Motivo">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelMotivo" layoutX="455.0" layoutY="243.0" prefHeight="110.0" prefWidth="299.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="imagenCoche" fitHeight="194.0" fitWidth="305.0" layoutX="59.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutY="-3.0" prefHeight="87.0" prefWidth="809.0">
+         <children>
+            <Label fx:id="nombreEncabezado" alignment="CENTER" layoutX="97.0" prefHeight="80.0" prefWidth="97.0" text="TALLERES MARTÍN TRUJILLO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="147.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_taller_blanco.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tituloEncabezado" alignment="CENTER" layoutX="215.0" layoutY="11.0" prefHeight="60.0" prefWidth="330.0" text="DETALLE DE UN COCHE" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUsuario" layoutX="578.0" layoutY="-2.0" mnemonicParsing="false" onAction="#ventanaGestionPersonal" prefHeight="87.0" prefWidth="174.0" text="Nombre correo" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="453.0" layoutY="424.0" text="Precio de las piezas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="368.0" text="Precio mano de obra">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="477.0" text="Coste total de la reparación">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPrecioTotal" layoutX="661.0" layoutY="469.0" prefHeight="20.0" prefWidth="137.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPrecioPiezas" layoutX="661.0" layoutY="416.0" prefHeight="20.0" prefWidth="137.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPrecioManoObra" layoutX="661.0" layoutY="358.0" prefHeight="20.0" prefWidth="147.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMatricula" alignment="CENTER" layoutX="333.0" layoutY="94.0" prefHeight="34.0" prefWidth="137.0" text="0000AAA" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

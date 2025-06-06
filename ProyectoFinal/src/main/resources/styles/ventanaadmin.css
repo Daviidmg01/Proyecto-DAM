@@ -1,0 +1,86 @@
+/* ventanaadmin.css */
+
+.mainFxmlClass {
+    -fx-background-color: #808080; /* Gris estándar */
+}
+
+/* Style for the top header pane */
+AnchorPane > AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* Título principal */
+Label[text="GARAJE"] {
+    -fx-text-fill: #ffffff; /* Blanco para mejor contraste */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 3, 0, 1, 1);
+}
+
+/* Style for buttons in general */
+Button {
+    -fx-background-color: white;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+/* Style for car buttons */
+Button#coche1, Button#coche2, Button#coche3,
+Button#coche4, Button#coche5, Button#coche6,
+Button#coche7, Button#coche8, Button#coche9,
+Button#coche10 {
+    -fx-background-color: white;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+/* Hover effect for buttons */
+Button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Hover effect for car buttons */
+Button#coche1:hover, Button#coche2:hover, Button#coche3:hover,
+Button#coche4:hover, Button#coche5:hover, Button#coche6:hover,
+Button#coche7:hover, Button#coche8:hover, Button#coche9:hover,
+Button#coche10:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Pressed effect for buttons */
+Button:pressed {
+    -fx-background-color: #b0b0b0;
+}
+
+/* Special style for btnUsuario with gradient and no border */
+#btnUsuario {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0; /* Elimina el redondeo de bordes */
+    -fx-border-width: 0; /* Elimina el borde */
+    -fx-padding: 5px 10px; /* Ajuste de padding */
+    -fx-effect: none; /* Elimina la sombra para mejor integración */
+}
+
+#btnUsuario:hover {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);
+    -fx-cursor: hand; /* Cambia el cursor al pasar por encima */
+}
+
+#btnUsuario:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a5276);
+}
+
+/* Style for the logo */
+ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+#tituloEncabezado, #nombreEncabezado {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1);
+}
